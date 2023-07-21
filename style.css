@@ -1,0 +1,232 @@
+/* * selects everything */
+/* css reset */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* #header > img {
+  width: 100%;
+  background-image: url("./images/header.jpg");
+  background-size: cover;
+
+  background-position: top;
+} */
+
+#header {
+  background-image: url(./images/header.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.opaque-red {
+  background-color: rgba(50, 36, 23, 0.962);
+  width: 100%;
+  height: 45px;
+  color: #fff;
+ 
+  justify-content: baseline;
+  font-family: "Lobster", cursive;
+}
+
+.h1 {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#features .imagecontainer {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  float: left;
+}
+
+#features h2 {
+  font-family: "Lobster", cursive;
+}
+
+#h3 {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+#features {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.container {
+  float: center;
+  color: #e48921;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* .nav {
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+}
+.nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+} */
+
+#nav {
+  top: 0;
+  position: sticky;
+  background-color: #342727;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+#nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.nav a:hover {
+  color: rgb(218, 151, 26);
+}
+
+#about p {
+  margin: 0 auto;
+  padding: 5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about {
+  background-color: #d1651e;
+  padding: 5px;
+  align-items: center;
+  color: aliceblue;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-family: Apple Chancery, cursive;
+}
+
+#gallery {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MEDIA QUERY ALWAYS AT THE BOTTOM OF CSS FILE */
+/* media query inherits the initial styles */
+/* styles I want to change for mobile */
+
+@media screen and (max-width: 600px) {
+  #nav a {
+    font-size: 20px;
+  }
+
+  /* #header {
+  }
+
+  #herotext {
+  } */
+
+  #features {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: center;
+  }
+
+  .h2 {
+    font-family: "Lobster", cursive;
+  }
+
+  #gallery {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    gap: 10px;
+  }
+
+  #gallery img {
+    margin: 1em auto;
+  }
+
+  #about p {
+    margin: 0;
+    padding: 7vh;
+    box-sizing: border-box;
+  }
+}
